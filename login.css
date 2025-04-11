@@ -83,7 +83,7 @@ button {
     font-size: 1em;
     cursor: pointer;
     transition: 0.3s;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -110,6 +110,7 @@ button:hover {
     height: 40px;
     cursor: pointer;
     border-radius: 50%;
+    margin-top: 2px;
 }
 
 .google img:hover {
