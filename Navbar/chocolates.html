@@ -1,173 +1,287 @@
 <!DOCTYPE html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolates</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="images/choco/style_choc.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolates</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="images/choco/style_choc.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div id="navbar-placeholder"></div>
-    <div class="title"><p>Category: Chocolates</p><p>(12 items)</p></div>
-    <div class="card-container">
-        <div class="card">
-          <img src="images/choco/choc1.webp" alt="Chocolate Box">
-          <div class="card-body">
-            <h5 class="card-title">Classic Truffle Collection</h5>
-            <p class="card-text">A timeless box of elegant assorted chocolate truffles for every occasion.</p>
-            <a href="#" class="add_btn">Add to Cart</a>
-            <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-            <p class="price">₹499</p>
-          </div>
+  <div id="navbar-placeholder"></div>
+  <div class="title">
+    <p>Category: Chocolates</p>
+    <p>(12 items)</p>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="images/choco/choc1.webp" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Classic Truffle Collection</h5>
+        <p class="card-text">A timeless box of elegant assorted chocolate truffles for every occasion.</p>
+        <a href="#" class="add_btn" data-name="Classic Truffle Collection" data-id="choc1" data-price="499"
+          data-image="images/choco/choc1.webp">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc1">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc1">-</p>
         </div>
-      
-        <div class="card">
-          <img src="images/choco/choc2.avif" alt="Chocolate Box">
-          <div class="card-body">
-            <h5 class="card-title">Floral Gift Box Delight</h5>
-            <p class="card-text">Beautifully wrapped chocolates nestled in a floral-themed gift box.</p>
-            <a href="#" class="add_btn">Add to Cart</a>
-            <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-            <p class="price">₹649</p>
-          </div>
-        </div>
-        <div class="card">
-            <img src="images/choco/choc_3.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Premium Celebration Hamper</h5>
-              <p class="card-text">A luxurious basket filled with gourmet chocolates and sweet treats.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹1099</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_4.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Choco Treasure Hamper</h5>
-              <p class="card-text">A festive mix of popular chocolates and goodies perfect for gifting.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹1299</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_5.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Cute Animal Chocolate Set</h5>
-              <p class="card-text">Adorable cat-themed artisan chocolates that taste as good as they look.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹549</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_6.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Romantic Heart Collection</h5>
-              <p class="card-text">Adorable cat-themed artisan chocolates that taste as good as they look.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹749</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_7.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Delight Assorted Chocolate Box</h5>
-              <p class="card-text">Enjoy a sweet treat with this assortment of delicious chocolates.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹699</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_8.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Personalized Message Chocolates</h5>
-              <p class="card-text">Say it with chocolate— customized lettered treats for special messages.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹899</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_9.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Valentine Love Box</h5>
-              <p class="card-text">A romantic mix of heart-shaped and pink-themed chocolates perfect for gifting your Valentine.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹799</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_10.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Lindt Teddy Treat Hamper</h5>
-              <p class="card-text">A premium Lindt collection with truffles, chocolate spread, and a cute teddy for cozy celebrations.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹1199</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_11.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Heart of Chocolate Collection</h5>
-              <p class="card-text">An elegant box centered around a floral heart chocolate, ideal for heartfelt occasions.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹749</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_12.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Floral Artisanal Chocolate Box</h5>
-              <p class="card-text">Exquisitely crafted floral and gourmet chocolates presented in a luxurious gift box.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹999</p>
-            </div>
-          </div>
-      
+        <p class="price">₹499</p>
       </div>
-      
-    </body>
-    <script>
-        $(function(){
-            $("#navbar-placeholder").load("navbar.html");
-        });
-        $('.math_btn').hide();
+    </div>
 
-        $('.add_btn').click(function(){
-            $(this).hide();  
-            $(this).siblings('.math_btn').show(); 
-            $(this).siblings('.math_btn').find('.quant').text('1');
-        });
+    <div class="card">
+      <img src="images/choco/choc2.avif" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Floral Gift Box Delight</h5>
+        <p class="card-text">Beautifully wrapped chocolates nestled in a floral-themed gift box.</p>
+        <a href="#" class="add_btn" data-name="Floral Gift Box Delight" data-id="choc2" data-price="649"
+          data-image="images/choco/choc2.avif">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc2">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc2">-</p>
+        </div>
+        <p class="price">₹649</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_3.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Premium Celebration Hamper</h5>
+        <p class="card-text">A luxurious basket filled with gourmet chocolates and sweet treats.</p>
+        <a href="#" class="add_btn" data-name="Premium Celebration Hamper" data-id="choc3" data-price="1099"
+          data-image="images/choco/choc_3.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc3">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc3">-</p>
+        </div>
+        <p class="price">₹1099</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_4.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Choco Treasure Hamper</h5>
+        <p class="card-text">A festive mix of popular chocolates and goodies perfect for gifting.</p>
+        <a href="#" class="add_btn" data-name="Choco Treasure Hamper" data-id="choc4" data-price="1299"
+          data-image="images/choco/choc_4.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc4">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc4">-</p>
+        </div>
+        <p class="price">₹1299</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_5.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Cute Animal Chocolate Set</h5>
+        <p class="card-text">Adorable cat-themed artisan chocolates that taste as good as they look.</p>
+        <a href="#" class="add_btn" data-name="Cute Animal Chocolate Set" data-id="choc5" data-price="549"
+          data-image="images/choco/choc_5.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc5">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc5">-</p>
+        </div>
+        <p class="price">₹549</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_6.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Romantic Heart Collection</h5>
+        <p class="card-text">Adorable cat-themed artisan chocolates that taste as good as they look.</p>
+        <a href="#" class="add_btn" data-name="Romantic Heart Collection" data-id="choc6" data-price="749"
+          data-image="images/choco/choc_6.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc6">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc6">-</p>
+        </div>
+        <p class="price">₹749</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_7.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Delight Assorted Chocolate Box</h5>
+        <p class="card-text">Enjoy a sweet treat with this assortment of delicious chocolates.</p>
+        <a href="#" class="add_btn" data-name="Delight Assorted Chocolate Box" data-id="choc7" data-price="699"
+          data-image="images/choco/choc_7.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc7">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc7">-</p>
+        </div>
+        <p class="price">₹699</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_8.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Personalized Message Chocolates</h5>
+        <p class="card-text">Say it with chocolate— customized lettered treats for special messages.</p>
+        <a href="#" class="add_btn" data-name="Personalized Message Chocolates" data-id="choc8" data-price="899"
+          data-image="images/choco/choc_8.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc8">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc8">-</p>
+        </div>
+        <p class="price">₹899</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_9.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Valentine Love Box</h5>
+        <p class="card-text">A romantic mix of heart-shaped and pink-themed chocolates perfect for gifting your
+          Valentine.</p>
+        <a href="#" class="add_btn" data-name="Valentine Love Box" data-id="choc9" data-price="799"
+          data-image="images/choco/choc_9.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc9">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc9">-</p>
+        </div>
+        <p class="price">₹799</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_10.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Lindt Teddy Treat Hamper</h5>
+        <p class="card-text">A premium Lindt collection with truffles, chocolate spread, and a cute teddy for cozy
+          celebrations.</p>
+        <a href="#" class="add_btn" data-name="Lindt Teddy Treat Hamper" data-id="choc10" data-price="1199"
+          data-image="images/choco/choc_10.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc10">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc10">-</p>
+        </div>
+        <p class="price">₹1199</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_11.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Heart of Chocolate Collection</h5>
+        <p class="card-text">An elegant box centered around a floral heart chocolate, ideal for heartfelt occasions.</p>
+        <a href="#" class="add_btn" data-name="Heart of Chocolate Collection" data-id="choc11" data-price="749"
+          data-image="images/choco/choc_11.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc11">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc11">-</p>
+        </div>
+        <p class="price">₹749</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/choco/choc_12.jpg" alt="Chocolate Box">
+      <div class="card-body">
+        <h5 class="card-title">Floral Artisanal Chocolate Box</h5>
+        <p class="card-text">Exquisitely crafted floral and gourmet chocolates presented in a luxurious gift box.</p>
+        <a href="#" class="add_btn" data-name="Floral Artisanal Chocolate Box" data-id="choc12" data-price="999"
+          data-image="images/choco/choc_12.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="choc12">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="choc12">-</p>
+        </div>
+        <p class="price">₹999</p>
+      </div>
+    </div>
 
-        var q = document.querySelector('.quant'); 
-        $('.add').click(function(){
-          let elem = $(this).siblings('.quant');
-          let q = parseInt(elem.text());
-          elem.text(q + 1);
-        });
-        $('.sub').click(function(){
-          let elem = $(this).siblings('.quant');
-        let q = parseInt(elem.text());
+  </div>
 
-        if (q > 1) {
-            elem.text(q - 1);
-        } else {
-            $(this).parent('.math_btn').hide();
-            $(this).closest('.card-body').find('.add_btn').show();
-        }
-    });  
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+
+<script>
+  $(function () {
+    $("#navbar-placeholder").load("navbar.html", function () {
+        updateCartCount();
+    });
+  });
+  $('.math_btn').hide();
+  $('.add_btn').click(function () {
+    $(this).hide();
+    $(this).siblings('.math_btn').show();
+    $(this).siblings('.math_btn').find('.quant').text('1');
+
+    const card = $(this).closest('.card');
+    const name = $(this).data('name');
+    const price = parseInt($(this).data('price'));
+    const image = $(this).data('image');
+    const productId = $(this).data('id');
+
+    const newItem = {
+      id: productId,
+      name: name,
+      price: price,
+      image: image,
+      quantity: 1
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existing = cart.find(item => item.id === productId);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      cart.push(newItem);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+  });
+  $('.add').click(function () {
+    let elem = $(this).siblings('.quant');
+    let q = parseInt(elem.text()) + 1;
+    elem.text(q);
+
+    const id = $(this).closest('.math_btn').siblings('.add_btn').data('id');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let item = cart.find(item => item.id === id);
+    if (item) {
+      item.quantity += 1;
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+    }
+  });
+  $('.sub').click(function () {
+    let elem = $(this).siblings('.quant');
+    let q = parseInt(elem.text()) - 1;
+    const id = $(this).closest('.math_btn').siblings('.add_btn').data('id');
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let index = cart.findIndex(item => item.id === id);
+
+    if (index !== -1) {
+      if (q < 1) {
+        cart.splice(index, 1); 
+        $(this).parent('.math_btn').hide();
+        $(this).closest('.card-body').find('.add_btn').show();
+      } else {
+        elem.text(q);
+        cart[index].quantity = q;
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+    }
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="cart.js"></script>
+</body>
+
 </html>

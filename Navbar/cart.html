@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+        #cart-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 60vh;
+     text-align: center;
+}
+   .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding:15px;
+    }
+
+.cart-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.cart-quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.cart-quantity {
+    font-size: 18px;
+    padding: 5px 10px;
+    min-width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-quantity-controls button {
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    padding-top: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-quantity-controls button:hover {
+    background-color: #e0e0e0;
+}
+
+#continue-btn {
+  background-color: hotpink;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.cart-empty-img img{
+  height: 300px;
+  width:500px;
+}
+
+#total-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <div id="cart-container"></div>
+  <p id="total-price" >Total: ₹0</p>
+
+  <script src="cart.js"></script>
+  <script>
+ $(function () {
+    $("#navbar-placeholder").load("navbar.html", function () {
+        updateCartCount();
+    });
+}); 
+    </script>
+</body>
+
+</html>
