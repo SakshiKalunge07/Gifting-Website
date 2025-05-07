@@ -1,173 +1,283 @@
 <!DOCTYPE html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolates</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style_choc.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style_product.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div id="navbar-placeholder"></div>
-    <div class="title"><p>Category: Cakes</p><p>(12 items)</p></div>
-    <div class="card-container">
-        <div class="card">
-          <img src="images/choco/choc1.webp" alt="Chocolate Box">
-          <div class="card-body">
-            <h5 class="card-title">Classic Truffle Collection</h5>
-            <p class="card-text">A timeless box of elegant assorted chocolate truffles for every occasion.</p>
-            <a href="#" class="add_btn">Add to Cart</a>
-            <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-            <p class="price">₹499</p>
-          </div>
+  <div id="navbar-placeholder"></div>
+  <div class="title">
+    <p>Category: Cakes</p>
+    <p>(12 items)</p>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="images/cakes/cake1.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Classic Chocolate Cake</h5>
+        <p class="card-text">Rich, moist chocolate layers topped with creamy ganache.</p>
+        <a href="#" class="add_btn" data-name="Classic Chocolate Cake" data-id="cake1" data-price="549"
+          data-image="images/cakes/cake1.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake1">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake1">-</p>
         </div>
-      
-        <div class="card">
-          <img src="images/choco/choc2.avif" alt="Chocolate Box">
-          <div class="card-body">
-            <h5 class="card-title">Floral Gift Box Delight</h5>
-            <p class="card-text">Beautifully wrapped chocolates nestled in a floral-themed gift box.</p>
-            <a href="#" class="add_btn">Add to Cart</a>
-            <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-            <p class="price">₹649</p>
-          </div>
-        </div>
-        <div class="card">
-            <img src="images/choco/choc_3.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Premium Celebration Hamper</h5>
-              <p class="card-text">A luxurious basket filled with gourmet chocolates and sweet treats.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹1099</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_4.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Choco Treasure Hamper</h5>
-              <p class="card-text">A festive mix of popular chocolates and goodies perfect for gifting.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹1299</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_5.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Cute Animal Chocolate Set</h5>
-              <p class="card-text">Adorable cat-themed artisan chocolates that taste as good as they look.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹549</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_6.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Romantic Heart Collection</h5>
-              <p class="card-text">Adorable cat-themed artisan chocolates that taste as good as they look.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹749</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_7.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Delight Assorted Chocolate Box</h5>
-              <p class="card-text">Enjoy a sweet treat with this assortment of delicious chocolates. Perfect for all occasions!</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹699</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_8.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Personalized Message Chocolates</h5>
-              <p class="card-text">Say it with chocolate— customized lettered treats for special messages.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹899</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_9.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Valentine Love Box</h5>
-              <p class="card-text">A romantic mix of heart-shaped and pink-themed chocolates perfect for gifting your Valentine.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹799</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_10.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Lindt Teddy Treat Hamper</h5>
-              <p class="card-text">A premium Lindt collection with truffles, chocolate spread, and a cute teddy for cozy celebrations.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹1199</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_11.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Heart of Chocolate Collection</h5>
-              <p class="card-text">An elegant box centered around a floral heart chocolate, ideal for heartfelt occasions.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹749</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/choco/choc_12.jpg" alt="Chocolate Box">
-            <div class="card-body">
-              <h5 class="card-title">Floral Artisanal Chocolate Box</h5>
-              <p class="card-text">Exquisitely crafted floral and gourmet chocolates presented in a luxurious gift box.</p>
-              <a href="#" class="add_btn">Add to Cart</a>
-              <div class="math_btn"><p class="add">+</p><p class="quant">1</p><p class="sub">-</p></div>
-              <p class="price">₹999</p>
-            </div>
-          </div>
-      
+        <p class="price">₹549</p>
       </div>
-      
-    </body>
-    <script>
-        $(function(){
-            $("#navbar-placeholder").load("navbar.html");
-        });
-        $('.math_btn').hide();
+    </div>
 
-        $('.add_btn').click(function(){
-            $(this).hide();  
-            $(this).siblings('.math_btn').show(); 
-            $(this).siblings('.math_btn').find('.quant').text('1');
-        });
-
-        var q = document.querySelector('.quant'); 
-        $('.add').click(function(){
-          let elem = $(this).siblings('.quant');
-          let q = parseInt(elem.text());
-          elem.text(q + 1);
-        });
-        $('.sub').click(function(){
-          let elem = $(this).siblings('.quant');
-        let q = parseInt(elem.text());
-
-        if (q > 1) {
-            elem.text(q - 1);
-        } else {
-            $(this).parent('.math_btn').hide();
-            $(this).closest('.card-body').find('.add_btn').show();
-        }
-    });  
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <div class="card">
+      <img src="images/cakes/cake2.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Red Velvet Delight</h5>
+        <p class="card-text">Velvety red layers with a swirl of cream cheese frosting.</p>
+        <a href="#" class="add_btn" data-name="Red Velvet Delight" data-id="cake2" data-price="749"
+          data-image="images/cakes/cake2.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake2">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake2">-</p>
+        </div>
+        <p class="price">₹749</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake3.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Vanilla Dream Cake</h5>
+        <p class="card-text">Light and fluffy vanilla cake perfect for any occasion.</p>
+        <a href="#" class="add_btn" data-name="Vanilla Dream Cake" data-id="cake3" data-price="529"
+          data-image="images/cakes/cake3.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake3">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake3">-</p>
+        </div>
+        <p class="price">₹529</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake4.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Strawberry Swirl Cake</h5>
+        <p class="card-text">Bursting with fresh strawberry flavor and creamy layers.</p>
+        <a href="#" class="add_btn" data-name="Strawberry Swirl Cake" data-id="cake4" data-price="795"
+          data-image="images/cakes/cake4.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake4">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake4">-</p>
+        </div>
+        <p class="price">₹795</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake5.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Black Forest Bliss</h5>
+        <p class="card-text">Layers of chocolate sponge, cherries, and whipped cream.</p>
+        <a href="#" class="add_btn" data-name="Black Forest Bliss" data-id="cake5" data-price="549"
+          data-image="images/cakes/cake5.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake5">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake5">-</p>
+        </div>
+        <p class="price">₹549</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake6.webp" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Butterscotch Beauty</h5>
+        <p class="card-text">Crunchy praline and soft butterscotch delight.</p>
+        <a href="#" class="add_btn" data-name="Butterscotch Beauty" data-id="cake6" data-price="699"
+          data-image="images/cakes/cake6.webp">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake6">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake6">-</p>
+        </div>
+        <p class="price">₹699</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake7.avif" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Pineapple Paradise Cake</h5>
+        <p class="card-text">Tropical pineapple flavor layered with soft vanilla sponge.</p>
+        <a href="#" class="add_btn" data-name="Pineapple Paradise Cake" data-id="cake7" data-price="549"
+          data-image="images/cakes/cake7.avif">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake7">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake7">-</p>
+        </div>
+        <p class="price">₹549</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake8.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Coffee Crave Cake</h5>
+        <p class="card-text">Bold coffee flavor infused in every rich, moist bite.</p>
+        <a href="#" class="add_btn" data-name="Coffee Crave Cake" data-id="cake8" data-price="599"
+          data-image="images/cakes/cake8.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake8">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake8">-</p>
+        </div>
+        <p class="price">₹599</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake9.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Rainbow Fantasy Cake</h5>
+        <p class="card-text">Colorful layers of fun with a creamy vanilla finish.</p>
+        <a href="#" class="add_btn" data-name="Rainbow Fantasy Cake" data-id="cake9" data-price="999"
+          data-image="images/cakes/cake9.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake9">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake9">-</p>
+        </div>
+        <p class="price">₹999</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake10.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Fruit Fiesta Cake</h5>
+        <p class="card-text">Loaded with fresh seasonal fruits and cream.</p>
+        <a href="#" class="add_btn" data-name="Fruit Fiesta Cake" data-id="cake10" data-price="775"
+          data-image="images/cakes/cake10.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake10">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake10">-</p>
+        </div>
+        <p class="price">₹775</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake11.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">KitKat Crunch Cake</h5>
+        <p class="card-text">Chocolate cake crowned with crispy KitKats and gems.</p>
+        <a href="#" class="add_btn" data-name="KitKat Crunch Cake" data-id="cake11" data-price="649"
+          data-image="mages/cakes/cake11.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake11">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake11">-</p>
+        </div>
+        <p class="price">₹649</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/cakes/cake12.jpg" alt="Cake Box">
+      <div class="card-body">
+        <h5 class="card-title">Oreo Overload Cake</h5>
+        <p class="card-text">Creamy, crunchy and full of your favorite Oreo cookies.</p>
+        <a href="#" class="add_btn" data-name="Oreo Overload Cake" data-id="cake12" data-price="449"
+          data-image="images/cakes/cake12.jpg">Add to Cart</a>
+        <div class="math_btn">
+          <p class="add" data-id="cake12">+</p>
+          <p class="quant">1</p>
+          <p class="sub" data-id="cake12">-</p>
+        </div>
+        <p class="price">₹449</p>
+      </div>
+    </div>
+  </div>
 </body>
+
+<script>
+  $(function () {
+    $("#navbar-placeholder").load("navbar.html", function () {
+        updateCartCount();
+    });
+  });
+  $('.math_btn').hide();
+  $('.add_btn').click(function () {
+    $(this).hide();
+    $(this).siblings('.math_btn').show();
+    $(this).siblings('.math_btn').find('.quant').text('1');
+
+    const card = $(this).closest('.card');
+    const name = $(this).data('name');
+    const price = parseInt($(this).data('price'));
+    const image = $(this).data('image');
+    const productId = $(this).data('id');
+
+    const newItem = {
+      id: productId,
+      name: name,
+      price: price,
+      image: image,
+      quantity: 1
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existing = cart.find(item => item.id === productId);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      cart.push(newItem);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+  });
+  $('.add').click(function () {
+    let elem = $(this).siblings('.quant');
+    let q = parseInt(elem.text()) + 1;
+    elem.text(q);
+
+    const id = $(this).closest('.math_btn').siblings('.add_btn').data('id');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let item = cart.find(item => item.id === id);
+    if (item) {
+      item.quantity += 1;
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+    }
+  });
+  $('.sub').click(function () {
+    let elem = $(this).siblings('.quant');
+    let q = parseInt(elem.text()) - 1;
+    const id = $(this).closest('.math_btn').siblings('.add_btn').data('id');
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let index = cart.findIndex(item => item.id === id);
+
+    if (index !== -1) {
+      if (q < 1) {
+        cart.splice(index, 1); 
+        $(this).parent('.math_btn').hide();
+        $(this).closest('.card-body').find('.add_btn').show();
+      } else {
+        elem.text(q);
+        cart[index].quantity = q;
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+    }
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="cart.js"></script>
+</body>
+
 </html>
