@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+font-family: "Montserrat", sans-serif;
+}
+.review-container{
+    margin: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.review{
+  background-color: rgb(233, 254, 255);
+  height:500px;
+}
+.customer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+    width: 200px !important;
+    height: 200px !important;
+    border-top:2px solid gray !important;
+    border-left:2px solid gray !important;
+    border-right:2px solid gray !important;
+}
+.card-body{
+    border-bottom:2px solid gray !important;
+    border-left:2px solid gray !important;
+    border-right:2px solid gray !important;
+    top:0px:
+}
+.heading{
+    color:rgb(86, 4, 86);
+}
+.heading #mainh{
+    font-weight: bold;
+    font-size: larger;
+    
+}
