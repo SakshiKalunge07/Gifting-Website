@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chocolates</title>
@@ -205,10 +205,10 @@
 </body>
 
 <script>
-  $(function () {
-    $("#navbar-placeholder").load("navbar.html", function () {
-        updateCartCount();
-    });
+  $(document).ready(function () {
+  $("#navbar-placeholder").load("navbar.html", function () {
+    updateCartCount();
+  });
   });
   $('.math_btn').hide();
   $('.add_btn').click(function () {
