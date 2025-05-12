@@ -31,3 +31,5 @@ Sakshi made following changes:-
 6)linked chocolates, cake and cart pages to navbar
 7)Continue shopping while cart is empty is redirecting to navbar file ,(will link that to home page once ready)
 >>>>>>> 18faea6cd24fbc1e76eb2385493bb373faac0443
+12/05-
+Sakshi Form Validation added
