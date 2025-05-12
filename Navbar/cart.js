@@ -12,7 +12,7 @@ function renderCart() {
             </div>`;
         
         $('#continue-btn').show().on('click', function () {
-            window.location.href = 'navbar.html';
+            window.location.href = 'homepage.html';
         });
 
         $('#total-price').text('');
