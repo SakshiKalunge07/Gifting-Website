@@ -1,5 +1,6 @@
 # Gifting-Website
 
+<<<<<<< HEAD
 # 15/04 - Bianca added Navbar
 
 <<<<<<< HEAD
@@ -15,3 +16,5 @@
 7)Continue shopping while cart is empty is redirecting to navbar file ,(will link that to home page once ready)
 8)deleted heart, cart,logo-temp and account images
 >>>>>>> 69bd043a387b5ab1e75fe6e49048355b3e5937d4
+=======
+>>>>>>> origin
