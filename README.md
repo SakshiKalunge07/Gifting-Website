@@ -1,35 +1,56 @@
-# Gifting-Website
+# 🎁 Gifting-Website
 
-<<<<<<< HEAD
-# 15/04 - Bianca added Navbar
+A responsive e-commerce platform dedicated to making gift shopping easy and delightful. This website allows users to browse various gifting categories, add products to a shopping cart, and manage their orders.
 
-<<<<<<< HEAD
-14/05 - sakshi added cakes, flowers, birthday and anniversary product pages and linked them to nav along with login page.
-=======
-# 03/05 - Sakshi made following changes:-
-1)edited navbar to resolve top bar visibility issue and some style changes
-2)removed Wishlist and pin code selector from navbar
-3)added cart item counter
-4)added cart.html and cart.js
-5)Chocolate page was edited for cart functionality
-6)linked chocolates, cake and cart pages to navbar
-7)Continue shopping while cart is empty is redirecting to navbar file ,(will link that to home page once ready)
-8)deleted heart, cart,logo-temp and account images
->>>>>>> 69bd043a387b5ab1e75fe6e49048355b3e5937d4
-<<<<<<< HEAD
-=======
->>>>>>> origin
-=======
+## ✨ Features
 
-# 03/05 - 
-Sakshi made following changes:-
-1)edited navbar to resolve top bar visibility issue and some style changes
-2)removed Wishlist and pin code selector from navbar
-3)added cart item counter
-4)added cart.html and cart.js
-5)Chocolate page was edited for cart functionality
-6)linked chocolates, cake and cart pages to navbar
-7)Continue shopping while cart is empty is redirecting to navbar file ,(will link that to home page once ready)
->>>>>>> 18faea6cd24fbc1e76eb2385493bb373faac0443
-12/05-
-Sakshi Form Validation added
+* **Product Catalog:** Browse a wide selection of products across multiple categories.
+    * Dedicated pages for **Cakes**, **Flowers**, and **Chocolates**.
+    * Category-specific pages for occasions like **Birthday** and **Anniversary**.
+* **Shopping Cart Functionality:**
+    * Users can add and remove items from the cart.
+    * A persistent cart item counter displays the number of items.
+    * Functionality to continue shopping when the cart is empty.
+* **User Authentication:** Includes a dedicated **Login Page**.
+* **Form Validation:** Client-side validation is implemented to ensure data integrity for user input.
+* **Navigation:** A clean and fully responsive `Navbar` for easy site navigation.
+
+## 🛠️ Technologies Used
+
+This project is built using foundational web technologies:
+
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+You only need a modern web browser (like Chrome, Firefox, or Edge) to view the project.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/SakshiKalunge07/Gifting-Website.git](https://github.com/SakshiKalunge07/Gifting-Website.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Gifting-Website
+    ```
+3.  **Open the project:**
+    Simply open the main HTML file (`homepage.html` ) in your preferred web browser.
+
+
+## 👤 Contributors
+
+| Contributor | Role |
+| :--- | :--- |
+| **Sakshi Kalunge** | Developed product pages and cart logic |
+| **Bianca** | Navbar and homepage Development |
+
+---
+*Developed with ❤️ by Sakshi Kalunge and Bianca Sawant.*
