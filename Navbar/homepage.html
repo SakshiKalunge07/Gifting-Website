@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="home_styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/choco/choc_9.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Valentines Boxes</h4>
+              <p>Gifts from the Heart for Your Valentine</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/choco/choc_8.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Mothers Day Specials</h4>
+              <p>Celebrate Her with Thoughtful Treats, Because she deserves it</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/choco/choc_7.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Decadent Truffles Collection</h4>
+              <p>Indulge in pure chocolatey goodness, with our new truffle boxes</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="new"><h2>New Arrivals</h2></div>
+      <div class="bestsellers">
+        <img src="images/birthday/bir12.webp" onclick="window.location.href='birthday.html'">
+        <img src="images/flowers/flow6.webp" onclick="window.location.href='flower.html'">
+        <img src="images/choco/choc_8.jpg" onclick="window.location.href='chocolates.html'">
+        <img src="images/cakes/cake5.jpg" onclick="window.location.href='cakes.html'">
+      </div>
+      <div class="new"><h2>Why Choose Us?</h2></div>
+      <div class="new"><h4><i>Your celebration deserves the best. Here's why our customers keep coming back</i></h4></div>
+      <div class="features">
+        <img src="images/why_us.jpeg">
+      </div>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(document).ready(function () {
+       $("#navbar-placeholder").load("navbar.html", function () {
+       updateCartCount();
+       });
+      });
+        $(document).ready(function(){
+            $("#footer-placeholder").load("footer_final.html");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

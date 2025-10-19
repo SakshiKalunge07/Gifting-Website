@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function validateForm() {
+            var email = document.getElementById("e").value;
+            var password = document.getElementById("t").value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            if (!passwordPattern.test(password)) {
+                alert("Password must be at least 6 characters long and contain both letters and numbers.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-img">
+            <img src="sideimg.jpg" alt="side image">
+        </div>
+        <div class="wrap">
+            <div class="login">
+                <h2>Login</h2>
+                <hr>
+            </div>
+            <div class="email">
+                <label for="e">E-mail</label>
+                <input type="email" id="e" placeholder=" Enter your E-mail Address" required>
+            </div>
+            <div class="psw">
+                <label for="t">Password</label>
+                <input type="password" id="t" placeholder="Enter your Password" required>
+            </div>
+            <div class="op">
+                <div class="Remember">
+                    <input type="checkbox">Remember Me
+                </div>
+                <div class="fp">
+                    <a href="#">Forgot Password</a>
+                </div>
+            </div>
+            <div class="b">
+                <button type="submit" onclick="return validateForm()">Login</button>
+            </div>
+            <p>or login with</p>
+            <div class="google">
+                <a href="https://accounts.google.com/" target="_blank"><img src="google logo.jpg" alt="Google"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
